@@ -1,0 +1,194 @@
+# Cinnamon Wine - A warm, orange-brown colorscheme
+# Ported from Neovim to Helix
+
+# UI Elements
+"ui.background" = { bg = "base" }
+"ui.background.separator" = "hi_med"
+"ui.cursor" = { fg = "base", bg = "text" }
+"ui.cursor.primary" = { fg = "base", bg = "text" }
+"ui.cursor.match" = { fg = "text", bg = "hi_med" }
+"ui.cursorline.primary" = { bg = "hi_low" }
+"ui.cursorcolumn.primary" = { bg = "hi_low" }
+"ui.linenr" = "muted"
+"ui.linenr.selected" = { bg = "hi_low" }
+"ui.statusline" = { fg = "subtle", bg = "surface" }
+"ui.statusline.inactive" = { fg = "muted", bg = "base" }
+"ui.statusline.normal" = { fg = "subtle", bg = "surface" }
+"ui.statusline.insert" = { fg = "subtle", bg = "surface" }
+"ui.statusline.select" = { fg = "subtle", bg = "surface" }
+"ui.help" = { fg = "text", bg = "surface" }
+"ui.text" = "text"
+"ui.text.focus" = { fg = "text" }
+"ui.text.inactive" = "subtle"
+"ui.virtual" = "muted"
+"ui.virtual.ruler" = { bg = "overlay" }
+"ui.virtual.whitespace" = "muted"
+"ui.virtual.indent-guide" = "muted"
+"ui.virtual.inlay-hint" = { fg = "muted", modifiers = ["italic"] }
+
+# Menus and popups
+"ui.menu" = { fg = "subtle", bg = "surface" }
+"ui.menu.selected" = { fg = "brightpink", bg = "overlay" }
+"ui.menu.scroll" = { fg = "hi_med", bg = "hi_low" }
+"ui.popup" = { fg = "text", bg = "surface" }
+"ui.popup.info" = { fg = "text", bg = "surface" }
+"ui.window" = { fg = "hi_med" }
+"ui.selection" = { bg = "hi_med" }
+"ui.selection.primary" = { bg = "hi_med" }
+
+# Bufferline/Tabs
+"ui.bufferline" = { fg = "subtle", bg = "surface" }
+"ui.bufferline.active" = { fg = "base", bg = "pink" }
+"ui.bufferline.background" = { bg = "surface" }
+
+# Gutter
+"ui.gutter" = { bg = "base" }
+
+# Diagnostics
+"diagnostic.error" = { underline = { color = "brightred", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "brightyellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"error" = "brightred"
+"warning" = "brightyellow"
+"info" = "blue"
+"hint" = "blue"
+
+# Diff
+"diff.plus" = { bg = "diff_add" }
+"diff.minus" = { bg = "diff_del" }
+"diff.delta" = { bg = "overlay" }
+"diff.delta.moved" = { bg = "diff_text" }
+
+# Syntax highlighting
+"comment" = { fg = "muted", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted", modifiers = ["italic"] }
+
+"constant" = "blueshade1"
+"constant.builtin" = "blue"
+"constant.builtin.boolean" = "blueshade1"
+"constant.character" = "red"
+"constant.character.escape" = "pinkshade2"
+"constant.macro" = "blue"
+"constant.numeric" = "blueshade1"
+
+"constructor" = "pinkshade2"
+
+"function" = "pinkshade3"
+"function.builtin" = "pinkshade2"
+"function.macro" = "pinkshade2"
+"function.method" = "pinkshade3"
+
+"keyword" = "pinkshade1"
+"keyword.control.conditional" = "pinkshade1"
+"keyword.control.exception" = "pinkshade1"
+"keyword.control.repeat" = "pinkshade1"
+"keyword.control.return" = "pinkshade1"
+"keyword.control.import" = "pinkshade1"
+"keyword.directive" = "pinkshade2"
+"keyword.function" = "pinkshade1"
+"keyword.operator" = "pinkshade1"
+"keyword.storage" = "pinkshade1"
+"keyword.storage.modifier" = "pinkshade1"
+"keyword.storage.type" = "pinkshade1"
+
+"label" = "pinkshade1"
+
+"namespace" = "text"
+
+"operator" = "pinkshade1"
+
+"punctuation" = "pink"
+"punctuation.bracket" = "pink"
+"punctuation.delimiter" = "pink"
+"punctuation.special" = "pink"
+
+"special" = "pinkshade2"
+
+"string" = "goldshade1"
+"string.escape" = "pinkshade2"
+"string.regex" = "goldshade1"
+"string.special" = "pinkshade2"
+
+"tag" = "pink"
+"tag.attribute" = "text"
+
+"type" = "red"
+"type.builtin" = "red"
+"type.enum.variant" = "blueshade1"
+
+"variable" = "text"
+"variable.builtin" = "blue"
+"variable.other.member" = "text"
+"variable.parameter" = "red"
+
+# Markup (Markdown, etc.)
+"markup.heading" = "pink"
+"markup.heading.1" = { fg = "pink", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "pink", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "pink", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "pink", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "pink", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "pink", modifiers = ["bold"] }
+"markup.list" = "pink"
+"markup.list.checked" = "green"
+"markup.list.unchecked" = "muted"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blueshade1", underline = { style = "line" } }
+"markup.link.text" = "pink"
+"markup.quote" = "goldshade1"
+"markup.raw" = "goldshade1"
+"markup.raw.block" = "goldshade1"
+
+# Git
+"git.delta.moved" = { bg = "diff_text" }
+
+# Colors palette
+[palette]
+# Base colors
+base = "#130c06"
+surface = "#342212"      # base.abs_lighten(10)
+overlay = "#554628"      # base.abs_lighten(20)
+
+# Foreground colors
+text = "#ffaa33"
+subtle = "#ff9000"
+muted = "#56330F"
+
+# Terminal colors
+red = "#ff3300"
+yellow = "#ffaa00"
+pink = "#ff8833"
+blue = "#dd7733"
+green = "#dd8844"
+purple = "#cc6633"
+
+# Syntax colors
+pinkshade1 = "#ff8833"   # Statements
+pinkshade2 = "#cc5500"   # Built-in functions
+pinkshade3 = "#ffaa44"   # Function names
+goldshade1 = "#dd9955"   # Strings
+blueshade1 = "#cc7744"   # Constants
+
+# Bright terminal colors
+brightred = "#ff6633"
+brightyellow = "#ffc944"
+brightpink = "#ffaa55"
+brightblue = "#ff9966"
+brightgreen = "#ffa877"
+brightpurple = "#ee8866"
+
+# Highlight colors
+hi_low = "#3a2a1a"       # Cursor line
+hi_med = "#5a4a3a"       # Search/selection
+hi_high = "#7a6a5a"      # More prominent
+
+# Diff colors
+diff_add = "#445533"     # Added lines
+diff_del = "#884444"     # Deleted lines
+diff_text = "#554466"    # Changed text
